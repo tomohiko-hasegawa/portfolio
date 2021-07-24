@@ -1,0 +1,281 @@
+@charset "UTF-8"
+
+/*共通部分
+----------------------*/
+html {
+  font-size:100%;
+}
+body {
+  font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ pro W3",sans-serif;
+  line-height:1.7;
+  color: #000;
+}
+a {
+  text-decoration:none;
+}
+img {
+  max-width:100%
+}
+.wrapper {
+  max-width: 1100PX;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+
+/*header
+----------------------*/
+header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 8vh;
+}
+.header-right {
+  margin-top: 5px;
+}
+h1 {
+  letter-spacing: 2px;
+}
+h1 a {
+  color: #000;
+}
+nav li {
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid rgba(160,160,160,0);
+}
+nav li:hover {
+  border-bottom: 1px solid rgb(160,160,160);
+}
+header nav li {
+  margin: 20px 0 0 60px ;
+}
+nav a {
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  width: 100px;
+}
+
+/*トップ画像
+----------------------*/
+.image-frame {
+  min-height: 92vh;
+  overflow: hidden;
+  position: relative;
+}
+.top-image {
+  background: url(../images/top-image.jpg) no-repeat center top/cover;
+  min-height: 92vh;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 4s;
+  -o-transition: 4s;
+  transition: 4s;
+}
+.br-pc {
+  display: none;
+}
+.image-frame h2 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  letter-spacing: 10px;
+  line-height: 92vh;
+  position: absolute;
+  top: 0;
+}
+/*文字アニメーション*/
+.fade {
+  -webkit-animation: fadeIn 4s ease 0s 1 normal;
+          animation: fadeIn 4s ease 0s 1 normal;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*abut
+----------------------*/
+h3 {
+  text-align: center;
+  margin: 120px 0 60px 0;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+.abut img {
+  margin-left: 10px;
+  height: 200px;
+}
+.profile {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.abut li {
+  margin-bottom: 5px;
+}
+.abut li:first-child {
+  font-size: 1.25rem;
+  padding-bottom: 5px;
+}
+.abut li:last-child {
+  padding-top: 5px;
+}
+
+/*contact
+----------------------*/
+.contact {
+  text-align: center;
+}
+.contact-ml {
+  margin: 20px auto;
+  background-color: rgba(128,128,128,0.2);
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+}
+.contact-ml:hover {
+  background: rgb(160,160,160);
+}
+.contact-ml a {
+  color: #000;
+  display: inline-block;
+  width: 250px;
+}
+
+/*footer
+----------------------*/
+.footer-nav {
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.footer-nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-nav li {
+  margin: 10px 60px;
+}
+#copyright {
+  background: rgb(160,160,160);
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+/*モバイル版
+-------------------------------------------------*/
+@media (max-width: 600px) {
+
+  /*header*/
+  header {
+    height: 13vh;
+  }
+  .mbl-block {
+    display: block;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .header-right {
+    height: 40px;
+  }
+  .header-left {
+    margin: 5px 0;
+  }
+  header nav li {
+    margin: 0 auto;
+  }
+
+  /*トップ画像*/
+  .image-frame {
+    min-height: 87vh;
+  }
+  .top-image {
+    background: url(../images/top-image-mbl.png) no-repeat center top/cover;
+    min-height: 87vh;
+  }
+  .br-pc {
+    display: block;
+  }
+  .image-frame h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    line-height: 30px;
+    height: 100%;
+  }
+
+  /*abut*/
+  h3 {
+    font-size: 2rem;
+  }
+  .abut img {
+    margin-left: 0;
+    height: 120px;
+  }
+  .profile {
+    margin-left: 20px;
+    margin-right: 0;
+    position: relative;
+  }
+  .profile li, .contact p, .profile span {
+    font-size: 1rem;
+  }
+  .abut .flex {
+    height: 470px;
+    padding-top: 85px;
+  }
+  .name, .description {
+    position: absolute;
+    left: -50px;
+  }
+  .name {
+    padding: 5px 4px 0;
+    top: -85px;
+    left: -110px;
+    line-height: 25px;
+  }
+  .description {
+    padding: 0 5px;
+    top: 190px;
+    left: -110px;
+  }
+  .profile li:nth-child(4) {
+    padding-right: 4px;
+  }
+
+  /*footer*/
+  .footer-nav li {
+    margin: 10px;
+  }
+  .footer-nav a {
+    display: inline;
+    padding: 5px 10px;
+  }
+}
