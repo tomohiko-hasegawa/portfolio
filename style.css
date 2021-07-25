@@ -204,6 +204,8 @@ h3 {
   header nav li {
     margin: 0 auto;
     line-height: 15px;
+  }
+  header nav li {
     background: red;
   }
 
