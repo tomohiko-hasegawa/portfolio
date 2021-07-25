@@ -193,15 +193,12 @@ h3 {
     display: block;
   }
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   header nav li {
     margin: 0 auto;
   }
-  header nav li {
-    background: red;
-  }
-
+  
   /*トップ画像*/
   .image-frame {
     min-height: 90vh;
