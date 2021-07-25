@@ -38,7 +38,7 @@ header {
           justify-content: space-between;
   height: 8vh;
 }
-.header-right {
+.header-left {
   margin-top: 5px;
 }
 h1 {
@@ -194,12 +194,6 @@ h3 {
   }
   h1 {
     font-size: 1.25rem;
-  }
-  .header-right {
-    height: 40px;
-  }
-  .header-left {
-    margin: 5px 0;
   }
   header nav li {
     margin: 0 auto;
