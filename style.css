@@ -187,7 +187,7 @@ h3 {
 
   /*header*/
   header {
-    height: 12vh;
+    height: 10vh;
   }
   .mbl-block {
     display: block;
@@ -204,15 +204,16 @@ h3 {
   header nav li {
     margin: 0 auto;
     line-height: 15px;
+    background: red;
   }
 
   /*トップ画像*/
   .image-frame {
-    min-height: 88vh;
+    min-height: 90vh;
   }
   .top-image {
     background: url(images/top-image-mbl.png) no-repeat center top/cover;
-    min-height: 88vh;
+    min-height: 90vh;
   }
   .br-pc {
     display: block;
