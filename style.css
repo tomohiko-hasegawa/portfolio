@@ -188,6 +188,7 @@ h3 {
   /*header*/
   header {
     height: 10vh;
+    background: red;
   }
   .mbl-block {
     display: block;
