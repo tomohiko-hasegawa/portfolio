@@ -36,7 +36,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 8vh;
 }
 .header-right {
   margin-top: 5px;
@@ -69,13 +68,13 @@ nav a {
 /*トップ画像
 ----------------------*/
 .image-frame {
-  min-height: 92vh;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
 .top-image {
   background: url(images/top-image.jpg) no-repeat center top/cover;
-  min-height: 92vh;
+  min-height: 100vh;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
