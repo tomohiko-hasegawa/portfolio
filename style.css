@@ -74,7 +74,7 @@ nav a {
   position: relative;
 }
 .top-image {
-  background: url(../images/top-image.jpg) no-repeat center top/cover;
+  background: url(images/top-image.jpg) no-repeat center top/cover;
   min-height: 92vh;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
@@ -210,7 +210,7 @@ h3 {
     min-height: 87vh;
   }
   .top-image {
-    background: url(../images/top-image-mbl.png) no-repeat center top/cover;
+    background: url(images/top-image-mbl.png) no-repeat center top/cover;
     min-height: 87vh;
   }
   .br-pc {
