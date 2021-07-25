@@ -207,11 +207,11 @@ h3 {
 
   /*トップ画像*/
   .image-frame {
-    min-height: 87vh;
+    min-height: 90vh;
   }
   .top-image {
     background: url(images/top-image-mbl.png) no-repeat center top/cover;
-    min-height: 87vh;
+    min-height: 90vh;
   }
   .br-pc {
     display: block;
