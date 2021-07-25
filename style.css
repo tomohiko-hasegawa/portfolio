@@ -74,7 +74,7 @@ nav a {
   position: relative;
 }
 .top-image {
-  background: url(..images/top-image.jpg) no-repeat center top/cover;
+  background: url(images/top-image.jpg) no-repeat center top/cover;
   min-height: 92vh;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
