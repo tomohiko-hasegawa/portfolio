@@ -273,13 +273,13 @@ h3 {
   }
   /*装飾*/
   .abut::before {
-    height: 630px;
+    height: 600px;
     width: 92vw;
     top: -50px;
     left: 0px;
   }
   .abut::after {
-    height: 500px;
+    height: 400px;
     width: 92vw;
     top: 400px;
     right: 0px;
