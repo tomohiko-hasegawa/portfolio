@@ -132,24 +132,24 @@ h3 {
 .abut {
   position: relative;
 }
-.abut::before {
+.profile:before {
   content: "";
-  height: 450px;
-  width: 800px;
+  height: 400px;
+  width: 1030px;
   background: rgba(128,128,128,0.1);
   position: absolute;
-  top: -50px;
-  left: -100px;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
-.abut::after {
+.profile:after {
   content: "";
-  height: 450px;
-  width: 800px;
+  height: 350px;
+  width: 1050px;
   background: rgba(131,131,131,0.1);
   position: absolute;
-  top: 0px;
-  right: -100px;
+  bottom: -50px;
+  right: 0px;
   z-index: -1;
 }
 
@@ -272,17 +272,17 @@ h3 {
     display: none;
   }
   /*装飾*/
-  .abut::before {
-    height: 600px;
+  .profile:before {
+    height: 550px;
     width: 92vw;
-    top: -50px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
-  .abut::after {
-    height: 400px;
+  .profile:after {
+    height: 390px;
     width: 92vw;
-    top: 400px;
-    right: 0px;
+    bottom: -20px;
+    right: 0;
   }
   
   /*contact*/
