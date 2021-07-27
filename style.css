@@ -249,6 +249,11 @@ h3 {
     display: none;
   }
   
+  /*contact*/
+  .contact p {
+    width: 80vw;
+  }
+  
   /*footer*/
   .footer-nav li {
     margin: 10px;
