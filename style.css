@@ -236,7 +236,7 @@ h3 {
     height: 170px;
   }
   .profile {
-    width: 250px;
+    width: 85vw;
     margin: 0 auto;
   }
   .profile li:last-child {
