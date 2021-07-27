@@ -193,7 +193,6 @@ h3 {
 
   /*トップ画像*/
   .top-image {
-    background: url(images/top-image-mbl.png) no-repeat center top/cover;
     min-height: 90vh;
   }
   .mbl-br {
