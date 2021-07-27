@@ -68,7 +68,7 @@ nav a {
 /*トップ画像
 ----------------------*/
 .top-image {
-  background: url(images/top-image.jpg) no-repeat center top/cover;
+  background: url(../images/top-image.jpg) no-repeat center top/cover;
   min-height: 92vh;
   position: relative;
 }
@@ -193,7 +193,7 @@ h3 {
 
   /*トップ画像*/
   .top-image {
-    background: url(images/top-image-mbl.png) no-repeat center top/cover;
+    background: url(../images/top-image-mbl.png) no-repeat center top/cover;
     min-height: 90vh;
   }
   .mbl-br {
@@ -248,12 +248,12 @@ h3 {
   .mbl-none {
     display: none;
   }
-  
+
   /*contact*/
   .contact p {
     width: 80vw;
+    margin: 0 auto;
   }
-  
   /*footer*/
   .footer-nav li {
     margin: 10px;
