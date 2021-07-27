@@ -190,17 +190,14 @@ h3 {
   }
   
   /*トップ画像*/
-  .image-frame {
-    min-height: 90vh;
-  }
   .top-image {
-    background: url(images/top-image-mbl.png) no-repeat center top/cover;
+    background: url(../images/top-image-mbl.png) no-repeat center top/cover;
     min-height: 90vh;
   }
   .br-pc {
     display: block;
   }
-  .image-frame h2 {
+  .fade h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
