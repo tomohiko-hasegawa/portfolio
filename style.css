@@ -273,9 +273,9 @@ h3 {
   }
   /*装飾*/
   .profile:before {
-    height: 540px;
+    height: 500px;
     width: 92vw;
-    top: 10px;
+    top: 50px;
     left: 0;
   }
   .profile:after {
