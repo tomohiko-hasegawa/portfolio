@@ -68,25 +68,15 @@ nav a {
 
 /*トップ画像
 ----------------------*/
-.image-frame {
-  min-height: 92vh;
-  overflow: hidden;
-  position: relative;
-}
 .top-image {
-  background: url(images/top-image.jpg) no-repeat center top/cover;
+  background: url(../images/top-image.jpg) no-repeat center top/cover;
   min-height: 92vh;
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 4s;
-  -o-transition: 4s;
-  transition: 4s;
+  position: relative;
 }
 .br-pc {
   display: none;
 }
-.image-frame h2 {
+.fade h2 {
   color: #fff;
   width: 100%;
   text-align: center;
