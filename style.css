@@ -274,17 +274,17 @@ h3 {
   /*装飾*/
   .abut::before {
     height: 630px;
-    width: 400px;
+    width: 92vw;
     top: -50px;
-    left: -100px;
+    left: 0px;
   }
   .abut::after {
     height: 500px;
-    width: 400px;
+    width: 92vw;
     top: 400px;
-    right: -100px;
+    right: 0px;
   }
-
+  
   /*contact*/
   .contact p {
     width: 80vw;
