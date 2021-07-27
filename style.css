@@ -230,13 +230,14 @@ h3 {
   .profile-img {
     margin: 30px auto;
     text-align: center;
-    height: 150px;
+    height: 170px;
   }
   .profile-img img {
-    height: 150px;
+    height: 170px;
   }
   .profile {
-    margin: 0;
+    width: 250px;
+    margin: 0 auto;
   }
   .profile li:last-child {
     margin-top: 30px;
@@ -247,7 +248,7 @@ h3 {
   .mbl-none {
     display: none;
   }
-
+  
   /*footer*/
   .footer-nav li {
     margin: 10px;
