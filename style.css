@@ -128,6 +128,30 @@ h3 {
 .profile li:last-child {
   margin-top: 15px;
 }
+/*装飾*/
+.abut {
+  position: relative;
+}
+.abut::before {
+  content: "";
+  height: 450px;
+  width: 800px;
+  background: rgba(128,128,128,0.1);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+}
+.abut::after {
+  content: "";
+  height: 450px;
+  width: 800px;
+  background: rgba(131,131,131,0.1);
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  z-index: -1;
+}
 
 /*contact
 ----------------------*/
@@ -246,6 +270,19 @@ h3 {
   }
   .mbl-none {
     display: none;
+  }
+  /*装飾*/
+  .abut::before {
+    height: 630px;
+    width: 400px;
+    top: -50px;
+    left: -100px;
+  }
+  .abut::after {
+    height: 500px;
+    width: 400px;
+    top: 400px;
+    right: -100px;
   }
 
   /*contact*/
