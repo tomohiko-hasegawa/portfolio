@@ -135,7 +135,7 @@ h3 {
 .profile:before {
   content: "";
   height: 400px;
-  width: 1030px;
+  width: 95vw;
   background: rgba(110,110,180,0.05);
   position: absolute;
   top: 0;
@@ -145,7 +145,7 @@ h3 {
 .profile:after {
   content: "";
   height: 350px;
-  width: 1050px;
+  width: 95vw;
   background: rgba(180,110,110,0.05);
   position: absolute;
   bottom: -50px;
