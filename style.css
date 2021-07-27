@@ -3,7 +3,7 @@
 /*共通部分
 ----------------------*/
 html {
-  font-size:100%;
+  font-size: 100%;
 }
 body {
   font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ pro W3",sans-serif;
@@ -11,10 +11,10 @@ body {
   color: #000;
 }
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 img {
-  max-width:100%
+  max-width: 100%
 }
 .wrapper {
   max-width: 1100PX;
@@ -72,7 +72,7 @@ nav a {
   min-height: 92vh;
   position: relative;
 }
-.br-pc {
+.mbl-br {
   display: none;
 }
 .fade h2 {
@@ -107,23 +107,26 @@ h3 {
   font-size: 2.5rem;
   letter-spacing: 5px;
 }
-.abut img {
+.pc-none {
+  display: none;
+}
+.profile-img {
+  width: 210px;
   margin-left: 10px;
-  height: 200px;
 }
 .profile {
   margin-left: 50px;
   margin-right: 20px;
 }
-.abut li {
+.profile li {
   margin-bottom: 5px;
 }
-.abut li:first-child {
+.name {
   font-size: 1.25rem;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
-.abut li:last-child {
-  padding-top: 5px;
+.profile li:last-child {
+  margin-top: 15px;
 }
 
 /*contact
@@ -187,13 +190,13 @@ h3 {
   header nav li {
     margin: 0 auto;
   }
-  
+
   /*トップ画像*/
   .top-image {
     background: url(images/top-image-mbl.png) no-repeat center top/cover;
     min-height: 90vh;
   }
-  .br-pc {
+  .mbl-br {
     display: block;
   }
   .fade h2 {
@@ -215,39 +218,34 @@ h3 {
   h3 {
     font-size: 2rem;
   }
-  .abut img {
-    margin-left: 0;
-    height: 120px;
+  .mbl-name {
+    text-align: center;
   }
-  .profile {
-    margin-left: 20px;
-    margin-right: 0;
-    position: relative;
-  }
-  .profile li, .contact p, .profile span {
-    font-size: 1rem;
-  }
-  .abut .flex {
-    height: 470px;
-    padding-top: 85px;
-  }
-  .name, .description {
-    position: absolute;
-    left: -50px;
+  .pc-none {
+    display: block;
   }
   .name {
-    padding: 5px 4px 0;
-    top: -85px;
-    left: -110px;
-    line-height: 25px;
+    padding: 0;
   }
-  .description {
-    padding: 0 5px;
-    top: 190px;
-    left: -110px;
+  .profile-img {
+    margin: 30px auto;
+    text-align: center;
+    height: 150px;
   }
-  .profile li:nth-child(4) {
-    padding-right: 4px;
+  .profile-img img {
+    height: 150px;
+  }
+  .profile {
+    margin: 0;
+  }
+  .profile li:last-child {
+    margin-top: 30px;
+  }
+  .profile li, .contact p {
+    font-size: 1rem;
+  }
+  .mbl-none {
+    display: none;
   }
 
   /*footer*/
