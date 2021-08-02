@@ -152,7 +152,7 @@ h3 {
   width: 100vw;
   background: rgba(95,30,30,0.08);
   position: absolute;
-  bottom: -100px;
+  bottom: -90px;
   left: -10px;
   z-index: -1;
 }
@@ -285,7 +285,7 @@ h3 {
   .profile:before {
     height: 470px;
     width: 92vw;
-    top: 80px;
+    top: 0;
     right: auto;
     left: 0;
   }
