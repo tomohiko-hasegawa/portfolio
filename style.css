@@ -285,7 +285,7 @@ h3 {
   .profile:before {
     height: 470px;
     width: 92vw;
-    top: 0;
+    top: -20px;
     right: auto;
     left: 0;
   }
