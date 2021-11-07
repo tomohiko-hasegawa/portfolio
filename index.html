@@ -10,72 +10,124 @@
 
   <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットcss -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher"><!-- Googleフォント -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!-- /CSS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Charm:wght@700&display=swap" rel="stylesheet"><!-- Googleフォント -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!--jQueryライブラリ読み込み-->
   </head>
 
   <body>
-    <header id="home" class="flex wrapper mbl-block">
-      <div class="header-left">
-        <h1><a href="#home">Portfolio</a></h1>
+
+    <header id="home" class="home">
+      <div class="flex wrapper">
+        <div class="header-left">
+          <h1><a href="#home">Portfolio</a></h1>
+        </div>
+        <nav class="header-right">
+          <ul class="flex">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu"><!--トグルメニュー-->
+          <p class="meue-btn"><img src="images/menu-btn.png" alt="menu"></p>
+          <nav class="menu-nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div><!--/トグルメニュー-->
       </div>
-      <nav class="header-right">
-        <ul class="flex">
-          <li><a href="#abut">ABOUT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
+
     </header>
 
     <div class="top-image">
       <div class="fade">
-        <h2>TOMOHIKO <br class="mbl-br">HASEGAWA</h2>
+        <h2>Tomohiko <br class="mbl-br">Hasegawa</h2>
       </div>
     </div>
 
-    <div id="abut" class="abut wrapper">
-      <h3>ABOUT</h3>
-      <div class="flex mbl-block container">
-        <div class="mbl-name pc-none">
-          <p class="name">長谷川　有彦</p>
-          <p>Tomohiko Hasegawa</p>
-        </div>
+    <div id="about" class="about">
+      <div class="section">
+        <h3 class="title wrapper">About</h3>
+      </div>
+      <div class="flex wrapper column">
         <div class="profile-img">
-          <img src="images/image1.jpg" alt="">
+          <img src="images/image1.png" alt="">
         </div>
-        <ul class="profile">
-          <li class="name mbl-none">長谷川　有彦　Tomohiko Hasegawa</li>
-          <li>1994年3月生まれ</li>
-          <li>神奈川県在住</li>
-          <li>ホームページ制作、HTML/CSSコーディング・jQuery、スマートフォンサイト</li>
-          <li>
-            <p>2020年8月からホームページ制作の勉強を開始。ユーザビリティが良いホームページを作れるよう心がけています。</p>
-            <p>またレスポンシブwebデザインによりモバイルにも対応いたします。
-              今後はCMSや、jQueryを使った動的なサイトを作れるよう日々勉強中です。</p></li>
-        </ul>
+        <div class="profile">
+          <h4>TOMOHIKO HASEGAWA</h4>
+          <p>WEB DESIGNER / 神奈川県在住 / 1994年3月生まれ</p>
+          <p>ホームページ制作、スマートフォンサイト、サムネイル・バナー制作</p>
+          <p>2020年8月からホームページ制作の勉強を開始。ユーザビリティが良いホームページを作れるよう心がけています。
+             またレスポンシブwebデザインによりモバイルにも対応いたします。
+             今後はCMSや、jQueryを使った動的なサイトを作れるよう日々勉強中です。</p>
+        </div>
       </div>
     </div>
 
-    <div id="contact" class="contact wrapper">
-      <h3>CONTACT</h3>
-      <p>お問い合わせはこちらのメールアドレスにお願いいたします。</p>
-      <div class="contact-ml">
-        <a href="mailto:tomo.h.design@gmail.com">tomo.h.design@gmail.com</a>
+    <div id="works" class="works">
+      <div class="section">
+        <h3 class="title wrapper">Works</h3>
+      </div>
+      <div class="wrapper">
+        <div class="thumbnail flex column">
+          <div class="item">
+            <img src="images/YouTubeサムネ01.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/YouTubeサムネ02.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/YouTubeサムネ03.png" alt="">
+          </div>
+        </div>
+        <div class="banner flex column">
+          <div class="item">
+            <img src="images/01バナー.png" alt="">
+          </div>
+          <div class="item">
+            <img src="images/02バナー.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contact" class="contact">
+      <div class="section">
+        <h3 class="title wrapper">Contact</h3>
+      </div>
+      <div class="contact-bg">
+        <div class="wrapper">
+          <p>お問い合わせはこちらのメールアドレスにお願いいたします。</p>
+          <div class="contact-ml">
+            <a href="mailto:tomo.h.design@gmail.com">tomo.h.design@gmail.com</a>
+          </div>
+        </div>
       </div>
     </div>
 
     <footer>
       <nav class="footer-nav">
         <ul class="flex">
-          <li><a class="home" href="#home">TOP</a></li>
-          <li><a href="#abut">ABOUT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <p id="copyright">
-        <small>&copy; 2021 TomohikoHasegawa</small>
+        <small>&copy; 2021 Tomohiko Hasegawa</small>
       </p>
     </footer>
+
+    <script src="script.js"></script><!--jQuery読み込み-->
   </body>
 
 </html>
