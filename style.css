@@ -346,14 +346,14 @@ h4 {
     box-sizing: border-box;
   }
   .title::before {
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
     top: 20px;
     left: 20px;
   }
   .title::after {
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     right: 20px;
     bottom: 20px;
   }/*装飾ここまで*/
@@ -365,17 +365,19 @@ h4 {
     font-size: 2rem;
   }
   .profile-img {
-    width:100%;
+    width:95%;
+    margin: 0 auto;
   }
   .profile {
-    width: 100%;
-    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
     padding-left: 0;
   }
 
   /*works*/
   .item {
-    padding: 5px 0;
+    padding: 8px 0;
   }
   .banner .item {
     width: 100%;
