@@ -83,7 +83,7 @@ nav a {
 /*トップ画像
 ----------------------*/
 .top-image {
-  background: url(../images/top-image.jpg) no-repeat center top/cover;
+  background: url(images/top-image.jpg) no-repeat center top/cover;
   background-color: rgba(31,31,31,0.3);
   background-blend-mode: overlay;
   min-height: 100vh;
@@ -204,7 +204,7 @@ h4 {
 /*contact
 ----------------------*/
 .contact-bg {
-  background: url(../images/top-image.jpg) no-repeat center bottom/cover;
+  background: url(images/top-image.jpg) no-repeat center bottom/cover;
   background-color: rgba(31,31,31,0.9);
   background-blend-mode: overlay;
 }
