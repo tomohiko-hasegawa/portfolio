@@ -1,12 +1,8 @@
 $(function() {
 
   $(".menu-nav").hide();
-  $(".meue-btn").click(function() {
+  $(".menu-btn").click(function() {
     $(".menu-nav").toggle(300);
-  });
-
-  $(".menu-nav a").click(function() {
-    $(".menu-nav").hide(300);
   });
 
   $('.scroll a').click(function(){
@@ -15,6 +11,15 @@ $(function() {
     $('html, body').animate({
       'scrollTop': position
     }, 500);
-    });
+  });
+
+  $(document).on('click',function(e) {
+    if(!$(e.target).closest('.clickTarget').length) {
+     // ターゲット要素の外側をクリックした時の操作
+     $(".menu-nav").hide(300);
+    } else {
+     // ターゲット要素をクリックした時の操作
+    }
+  });
 
 });
