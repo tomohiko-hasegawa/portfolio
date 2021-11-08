@@ -218,7 +218,7 @@ h4 {
 }
 .contact-ml {
   margin: 20px auto 0;
-  background-color: rgb(255,255,255,0.7);
+  background-color: rgb(255,255,255,0.8);
   border-radius: 2px;
   width: 280px;
   height: 50px;
@@ -286,20 +286,20 @@ h4 {
     position: relative;
   }
   .meue-btn {
-    max-width: 65px;
-    max-height: 65px;
-    padding: 10px;
-    background: rgba(0,0,0,0.7);
+    max-width: 50px;
+    max-height: 50px;
+    padding: 7px;
+    background: rgba(0,0,0,0.9);
     position: fixed;
     right: 0;
     z-index: 999;
   }
   .menu-nav {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.9);
     padding: 40px 20% 50px;
     width: 100vw;
     position: fixed;
-    top: 65px;
+    top: 80px;
     right: 0
   }
   nav li {
