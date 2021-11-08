@@ -1,133 +1,396 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="icon" type="" href=""><!-- ファビコン -->
+@charset "UTF-8"
 
-  <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットcss -->
-    <link rel="stylesheet" href="style.css">
-  <!-- /CSS -->
+/*共通部分
+----------------------*/
+html {
+  font-size: 100%;
+}
+body {
+  font-family:"sans-serif";
+  line-height:1.7;
+  background: #fbfbfb;
+  color: #757575;
+  overflow-x: hidden;
+}
+ h1, h2, h3 {
+  font-family: 'Charm', cursive;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%
+}
+.wrapper {
+  max-width: 1170PX;
+  margin: 0 auto;
 
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Charm:wght@700&display=swap" rel="stylesheet"><!-- Googleフォント -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!--jQueryライブラリ読み込み-->
-  </head>
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
 
-  <body>
+/*header
+----------------------*/
+header {
+  background-color: rgba(0,0,0,0.5);
+  justify-content: space-between;
+  height: 80px;
+  position: absolute;
+  width: 100vw;
+  z-index: 100;
+}
+header .flex {
+  justify-content: space-between;
+}
+h1 {
+  line-height: 80px;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+h1 a {
+  color: #fff;
+}
+nav li {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+nav li:hover {
+  border-bottom: 1px solid rgb(160,160,160);
+}
+header nav li {
+  margin: 20px 20px;
+}
+nav a {
+  color: #fff;
+  letter-spacing: 2px;
+  display: inline-block;
+  width: 100px;
+}
+/*トグルメニュー*/
+.menu {
+  display: none;
+}
 
-    <header id="home" class="home">
-      <div class="flex wrapper">
-        <div class="header-left">
-          <h1><a href="#home">Portfolio</a></h1>
-        </div>
-        <nav class="header-right scroll">
-          <ul class="flex">
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="menu"><!--トグルメニュー-->
-          <p class="menu-btn clickTarget"><img src="images/menu-btn.png" alt="menu"></p>
-          <nav class="menu-nav scroll clickTarget">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div><!--/トグルメニュー-->
-      </div>
+/*トップ画像
+----------------------*/
+.top-image {
+  background: url(../images/top-image.jpg) no-repeat center top/cover;
+  background-color: rgba(31,31,31,0.3);
+  background-blend-mode: overlay;
+  min-height: 100vh;
+}
+.mbl-br {
+  display: none;
+}
+.fade h2 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 4px;
+  line-height: 100vh;
+}
+/*文字アニメーション*/
+.fade {
+  -webkit-animation: fadeIn 4s ease 0s 1 normal;
+          animation: fadeIn 4s ease 0s 1 normal;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
-    </header>
+/*about
+----------------------*/
+.container {
+  width: 100vw;
+  background-color: #1f1f1f;
+}
+.about .wrapper, .works .wrapper {
+  padding: 150px 0;
+}
+.title {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 3.25rem;
+  letter-spacing: 5px;
+}
+/*タイトル装飾*/
+.title::before, .title::after {
+  content: "";
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.title::before {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  top: 40px;
+  left: 0;
+  /*right: 960px;*/
+}
+.title::after {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  /*left: 960px;*/
+  right: 0;
+  bottom: 40px;
+}/*装飾ここまで*/
 
-    <div class="top-image">
-      <div class="fade">
-        <h2>Tomohiko <br class="mbl-br">Hasegawa</h2>
-      </div>
-    </div>
+.profile-img {
+  width: 40%;
+  padding: 0 20px;
+}
+.profile {
+  width: 40%;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+h4 {
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+  color: #1f1f1f;
+}
+.profile p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 
-    <div id="about" class="about">
-      <div class="container">
-        <h3 class="title">About</h3>
-      </div>
-      <div class="flex wrapper column">
-        <div class="profile-img">
-          <img src="images/image1.png" alt="">
-        </div>
-        <div class="profile">
-          <h4>TOMOHIKO HASEGAWA</h4>
-          <p>WEB DESIGNER / 神奈川県在住 / 1994年3月生まれ</p>
-          <p>ホームページ制作、スマートフォンサイト、サムネイル・バナー制作</p>
-          <p>2020年8月からホームページ制作の勉強を開始。ユーザビリティが良いホームページを作れるよう心がけています。
-             またレスポンシブwebデザインによりモバイルにも対応いたします。
-             今後はCMSや、jQueryを使った動的なサイトを作れるよう日々勉強中です。</p>
-        </div>
-      </div>
-    </div>
+/*works
+----------------------*/
+h4 {
+  font-size: 1.25rem;
+}
+.item {
+  padding: 0 15px;
+}
+.item img {
+  box-shadow: 0 0 5px #c8c8c8;
+}
+.banner .item {
+  width: 40%;
+  margin: 50px 0 0;
+}
 
-    <div id="works" class="works">
-      <div class="container">
-        <h3 class="title">Works</h3>
-      </div>
-      <div class="wrapper">
-        <div class="thumbnail flex column">
-          <div class="item">
-            <img src="images/YouTubeサムネ01.png" alt="">
-          </div>
-          <div class="item">
-            <img src="images/YouTubeサムネ02.png" alt="">
-          </div>
-          <div class="item">
-            <img src="images/YouTubeサムネ03.png" alt="">
-          </div>
-        </div>
-        <div class="banner flex column">
-          <div class="item">
-            <img src="images/01バナー.png" alt="">
-          </div>
-          <div class="item">
-            <img src="images/02バナー.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
+/*contact
+----------------------*/
+.contact-bg {
+  background: url(../images/top-image.jpg) no-repeat center bottom/cover;
+  background-color: rgba(31,31,31,0.9);
+  background-blend-mode: overlay;
+}
+.contact {
+  text-align: center;
+}
+.contact p {
+  color: #fff;
+}
+.contact-bg .wrapper {
+  padding: 200px 0;
+}
+.contact-ml {
+  margin: 20px auto 0;
+  background-color: rgb(255,255,255,0.8);
+  border-radius: 2px;
+  width: 280px;
+  height: 50px;
+  line-height: 46px;
+  border: 2px solid #1f1f1f;
+}
+.contact-ml a {
+  font-weight: bold;
+  color: #1f1f1f;
+  display: inline-block;
+  width: 280px;
+}
+.contact-ml:hover {
+  background: rgb(255,255,255,1);
+}
+
+/*footer
+----------------------*/
+.footer-nav {
+  background-color: #1f1f1f;
+  margin: 0 auto;
+}
+.footer-nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-nav li {
+  margin: 10px 60px;
+}
+#copyright {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
 
 
-    <div id="contact" class="contact">
-      <div class="container">
-        <h3 class="title">Contact</h3>
-      </div>
-      <div class="contact-bg">
-        <div class="wrapper">
-          <p>お問い合わせはこちらのメールアドレスにお願いいたします。</p>
-          <div class="contact-ml">
-            <a href="mailto:tomo.h.design@gmail.com">tomo.h.design@gmail.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
+/*モバイル版
+-------------------------------------------------*/
+@media (max-width: 600px) {
 
-    <footer>
-      <nav class="footer-nav scroll">
-        <ul class="flex">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <p id="copyright">
-        <small>&copy; 2021 Tomohiko Hasegawa</small>
-      </p>
-    </footer>
+  .wrapper {
+    padding: 0 4%;
+  }
+  /*header*/
+  header {
+    height: 65px;
+  }
+  h1 {
+    line-height: 65px;
+    font-size: 1.75rem;
+  }
+  .header-right {
+    display: none;
+  }
+  .about .wrapper, .works .wrapper {
+    padding: 75px 4%;
+  }
+  /*トグルメニュー*/
+  .menu {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  }
+  .menu-btn {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 7px;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 7.5px;
+    right: 0;
+    z-index: 999;
+  }
+  .menu-nav {
+    background: rgba(0,0,0,0.9);
+    border: 1px solid rgb(255,255,255,0.4);
+    padding: 40px 20% 50px;
+    width: 100vw;
+    position: fixed;
+    top: 65px;
+    right: 0
+  }
+  nav li {
+    border-bottom: 1px solid rgb(160,160,160);
+  }
+  nav a {
+    width: 100%;
+  }
+  /*トグルメニューここまで*/
 
-    <script src="script.js"></script><!--jQuery読み込み-->
-  </body>
+  /*トップ画像*/
+  .top-image {
+    min-height: 100vh;
+  }
+  .mbl-br {
+    display: block;
+  }
+  .fade h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.5rem;
+    line-height: 40px;
+    height: 100vh;
+  }
 
-</html>
+  /*about*/
+  .title {
+    width: 90vw;
+    height: 150px;
+    line-height: 150px;
+  }
+  /*タイトル装飾(「」)*/
+  .title::before, .title::after {
+    content: "";
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .title::before {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    top: 20px;
+    left: 20px;
+  }
+  .title::after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    right: 20px;
+    bottom: 20px;
+  }/*装飾ここまで*/
+
+  .column {
+    flex-direction: column;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .profile-img {
+    width:95%;
+    margin: 0 auto;
+  }
+  .profile {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 0;
+  }
+
+  /*works*/
+  .item {
+    padding: 8px 0;
+  }
+  .banner .item {
+    width: 100%;
+    margin: 0;
+  }
+
+  /*contact*/
+  .contact p {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .contact-ml {
+    background-color: rgb(255,255,255,1);
+  }
+  /*footer*/
+  .footer-nav {
+    display: none;
+  }
+}
