@@ -291,6 +291,7 @@ h4 {
     padding: 7px;
     background: rgba(0,0,0,0.9);
     position: fixed;
+    top: 7.5px; 
     right: 0;
     z-index: 999;
   }
