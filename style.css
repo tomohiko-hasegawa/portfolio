@@ -285,7 +285,7 @@ h4 {
     margin: 0 auto;
     position: relative;
   }
-  .meue-btn {
+  .menu-btn {
     max-width: 50px;
     max-height: 50px;
     padding: 7px;
@@ -296,10 +296,11 @@ h4 {
   }
   .menu-nav {
     background: rgba(0,0,0,0.9);
+    border: 1px solid rgb(255,255,255,0.4);
     padding: 40px 20% 50px;
     width: 100vw;
     position: fixed;
-    top: 80px;
+    top: 65px;
     right: 0
   }
   nav li {
