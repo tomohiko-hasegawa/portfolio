@@ -53,6 +53,7 @@ h1 {
   line-height: 80px;
   letter-spacing: 2px;
   font-size: 2.5rem;
+  margin-left: 15px;
 }
 h1 a {
   color: #fff;
@@ -266,6 +267,7 @@ h4 {
   h1 {
     line-height: 65px;
     font-size: 1.75rem;
+    margin-left: 0;
   }
   .header-right {
     display: none;
@@ -333,26 +335,27 @@ h4 {
     width: 90vw;
     height: 150px;
     line-height: 150px;
+    font-size: 2.5rem;
   }
   /*タイトル装飾(「」)*/
   .title::before, .title::after {
     content: "";
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 30px;
     position: absolute;
     box-sizing: border-box;
   }
   .title::before {
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 15px;
   }
   .title::after {
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
+    bottom: 30px;
   }/*装飾ここまで*/
 
   .column {
