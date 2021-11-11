@@ -415,7 +415,7 @@ a.mail-icon::before {
     background-color: rgb(255,255,255,1);
   }
   .contact-bg {
-    background: url(../images/top-image-mbl.jpg) no-repeat center bottom/cover;
+    background: url(images/top-image-mbl.jpg) no-repeat center bottom/cover;
     background-color: rgba(31,31,31,0.9);
     background-blend-mode: overlay;
   }
