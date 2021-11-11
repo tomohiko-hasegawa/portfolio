@@ -92,7 +92,7 @@ nav a {
 /*トップ画像
 ----------------------*/
 .top-image {
-  background: url(../images/top-image.jpg) no-repeat center top/cover;
+  background: url(images/top-image.jpg) no-repeat center top/cover;
   background-color: rgba(31,31,31,0.3);
   background-blend-mode: overlay;
   min-height: 100vh;
@@ -203,7 +203,7 @@ h4 {
 /*contact
 ----------------------*/
 .contact-bg {
-  background: url(../images/top-image.jpg) no-repeat center bottom/cover;
+  background: url(images/top-image.jpg) no-repeat center bottom/cover;
   background-color: rgba(31,31,31,0.9);
   background-blend-mode: overlay;
 }
@@ -237,7 +237,7 @@ a.mail-icon::before {
   width: 22px;
   height: 22px;
   margin: -4px 10px 0 0;
-  background: url(../images/mail-icon.png) no-repeat;
+  background: url(images/mail-icon.png) no-repeat;
   background-size: contain;
   vertical-align: middle;
 }
@@ -325,7 +325,7 @@ a.mail-icon::before {
 
   /*トップ画像*/
   .top-image {
-    background: url(../images/top-image-mbl.jpg) no-repeat center top/cover;
+    background: url(images/top-image-mbl.jpg) no-repeat center top/cover;
     background-color: rgba(31,31,31,0.3);
     background-blend-mode: overlay;
   }
