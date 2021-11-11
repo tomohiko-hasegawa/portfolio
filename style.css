@@ -181,9 +181,6 @@ h4 {
 
 /*works
 ----------------------*/
-h4 {
-  font-size: 1.25rem;
-}
 .item {
   padding: 0 15px;
 }
@@ -215,21 +212,31 @@ h4 {
   margin: 20px auto 0;
   background-color: rgb(255,255,255,0.8);
   border-radius: 2px;
-  width: 280px;
+  width: 320px;
   height: 50px;
-  line-height: 46px;
   border: 2px solid #1f1f1f;
 }
-.contact-ml a {
-  font-weight: bold;
-  color: #1f1f1f;
+a.mail-icon {
   display: inline-block;
-  width: 280px;
+  color: #1f1f1f;
+  font-weight: bold;
+  line-height: 48px;
+  width: 100%;
 }
+a.mail-icon::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: -2px 10px 0 0;
+  background: url(images/mail-icon.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
 .contact-ml:hover {
   background: rgb(255,255,255,1);
 }
-
 /*footer
 ----------------------*/
 .footer-nav {
@@ -310,21 +317,17 @@ h4 {
 
   /*トップ画像*/
   .top-image {
-    min-height: 100vh;
+    background: url(images/top-image-mbl.jpg) no-repeat center top/cover;
+    background-color: rgba(31,31,31,0.3);
+    background-blend-mode: overlay;
   }
   .mbl-br {
     display: block;
   }
   .fade h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 2.5rem;
     line-height: 40px;
     height: 100vh;
@@ -391,6 +394,11 @@ h4 {
   }
   .contact-ml {
     background-color: rgb(255,255,255,1);
+  }
+  .contact-bg {
+    background: url(images/top-image-mbl.jpg) no-repeat center bottom/cover;
+    background-color: rgba(31,31,31,0.9);
+    background-blend-mode: overlay;
   }
   /*footer*/
   .footer-nav {
