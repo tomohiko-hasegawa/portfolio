@@ -30,7 +30,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 ul {
   list-style: none;
@@ -40,14 +42,18 @@ ul {
 ----------------------*/
 header {
   background-color: rgba(0,0,0,0.5);
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 80px;
   position: absolute;
   width: 100vw;
   z-index: 100;
 }
 header .flex {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 h1 {
   line-height: 80px;
@@ -143,7 +149,8 @@ nav a {
   width: 100px;
   height: 40px;
   position: absolute;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .title::before {
   border-top: 1px solid #fff;
@@ -185,7 +192,8 @@ h4 {
   padding: 0 15px;
 }
 .item img {
-  box-shadow: 0 0 5px #c8c8c8;
+  -webkit-box-shadow: 0 0 5px #c8c8c8;
+          box-shadow: 0 0 5px #c8c8c8;
 }
 .banner .item {
   width: 40%;
@@ -325,9 +333,15 @@ a.mail-icon::before {
     display: block;
   }
   .fade h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 2.5rem;
     line-height: 40px;
     height: 100vh;
@@ -346,7 +360,8 @@ a.mail-icon::before {
     width: 80px;
     height: 30px;
     position: absolute;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .title::before {
     border-top: 1px solid #fff;
@@ -362,7 +377,10 @@ a.mail-icon::before {
   }/*装飾ここまで*/
 
   .column {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   h3 {
     font-size: 2rem;
